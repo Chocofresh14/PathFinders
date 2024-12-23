@@ -10,7 +10,7 @@ fi
 echo "Installation des dépendances..."
 if command -v apt &> /dev/null; then
     sudo apt update
-    sudo apt install -y build-essential libcurl4-openssl-dev
+    sudo apt-get install -y build-essential libcurl4-openssl-dev
 elif command -v yum &> /dev/null; then
     sudo yum groupinstall -y "Development Tools"
     sudo yum install -y libcurl-devel

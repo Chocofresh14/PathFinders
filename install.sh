@@ -22,4 +22,4 @@ make
 make install
 
 echo "Installation terminée !"
-echo "Vous pouvez maintenant utiliser Scanner directement avec la commande : scanner"
+echo "Vous pouvez maintenant utiliser Scanner directement avec la commande : pfinders"

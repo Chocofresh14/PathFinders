@@ -1,4 +1,4 @@
-# Makefile pour Scanner
+# Makefile pour PathFinders
 CC = gcc
 CFLAGS = -Wall -Wextra
 LDFLAGS = -lcurl

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script d'installation pour Scanner
+# Script d'installation pour PathFinders
 
 if ! command -v sudo &> /dev/null; then
     echo "sudo est requis pour l'installation"
@@ -16,10 +16,10 @@ elif command -v yum &> /dev/null; then
     sudo yum install -y libcurl-devel
 fi
 
-echo "Compilation et installation du Scanner..."
+echo "Compilation et installation de PathFinders..."
 make clean
 make
 make install
 
 echo "Installation terminée !"
-echo "Vous pouvez maintenant utiliser Scanner directement avec la commande : pfinders"
+echo "Vous pouvez maintenant utiliser PathFinders directement avec la commande : pfinders"

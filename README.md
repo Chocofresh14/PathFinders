@@ -1,6 +1,6 @@
 # **PathFinders**
 
-URL Scanner est un outil de scan d'URLs écrit en **C**, utilisant la bibliothèque **libcurl**. Il permet d'explorer des chemins cachés sur un serveur web en utilisant une wordlist et d'analyser les réponses HTTP pour détecter les ressources accessibles.
+PathFinders est un outil de scan d'URLs écrit en **C**, utilisant la bibliothèque **libcurl**. Il permet d'explorer des chemins cachés sur un serveur web en utilisant une wordlist et d'analyser les réponses HTTP pour détecter les ressources accessibles.
 
 ---
 

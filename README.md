@@ -24,6 +24,17 @@ URL Scanner est un outil de scan d'URLs écrit en **C**, utilisant la bibliothè
 - **libcurl** (bibliothèque de gestion des requêtes HTTP)
 
 ### Installation
+Clonez le dépôt Github :
+```bash
+git clone https://github.com/Chocofresh14/PathFinders.git
+```
+
+Allez dans le dossier `PathFinders` :
+```bash
+cd PathFinders
+```
+
+Exécutez le fichier shell pour l'installer et le compiler :
 ```bash
 sudo bash install.sh
 ```

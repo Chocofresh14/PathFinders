@@ -92,9 +92,34 @@ void scan_url(const char *base_url, const char *wordlist_path, int current_level
     fclose(wordlist);
 }
 
+void print_help(const char *program_name) {
+    printf("Usage: %s <url> <wordlist> [options]\n\n", program_name);
+    printf("Options:\n");
+    printf("  -h           Affiche ce message d'aide\n");
+    printf("  -n <niveau>  Définit la profondeur maximale du scan (défaut: 1)\n");
+    printf("  -o <fichier> Spécifie le fichier de sortie pour les résultats\n\n");
+    printf("Exemple:\n");
+    printf("  %s http://exemple.com wordlist.txt -n 2 -o resultats.txt\n", program_name);
+}
+
 int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        print_help(argv[0]);
+        return 1;
+    }
+
+    // Vérifier si l'aide est demandée
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-h") == 0) {
+            print_help(argv[0]);
+            return 0;
+        }
+    }
+
+    // Vérifier les arguments minimums requis
     if (argc < 4) {
-        printf("Usage: %s <url> <wordlist> -n <niveau> [-o <output_file>]\n", argv[0]);
+        printf("Erreur: Arguments manquants\n");
+        print_help(argv[0]);
         return 1;
     }
 
